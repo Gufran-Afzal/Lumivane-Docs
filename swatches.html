@@ -1,0 +1,133 @@
+<!doctype html><html lang="en"><head><meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1"><title>Colour swatches and shades · Lumivane documentation</title><meta name="description" content="Swatches turn a list of shade names into small coloured circles. This page explains how they work and how to set them up, even if you have never done it before."><link rel="stylesheet" href="style.css"><script>try{var t=localStorage.getItem("theme");if(t)document.documentElement.dataset.theme=t}catch(e){}</script></head><body>
+<a class="skip" href="#main">Skip to content</a>
+<header class="top"><button class="menu" aria-label="Open menu" aria-expanded="false" aria-controls="nav">☰</button><a class="brand" href="index.html">Lumivane<span>Docs</span></a>
+<div class="search"><input id="q" type="search" placeholder="Search the guide…" aria-label="Search the guide" autocomplete="off"><div id="results" role="listbox" hidden></div></div>
+<button class="mode" aria-label="Switch light and dark">☾</button></header>
+<div class="shell"><nav id="nav" class="nav" aria-label="Guide"><p class="nav__g">Start here</p><a href="index.html">Welcome</a><a href="before-you-start.html">Before you start</a><a href="install.html">Install the theme</a><a href="quick-start.html">10-step quick start</a><p class="nav__g">Set up</p><a href="image-sizes.html">Image sizes</a><a href="products.html">Add products</a><a href="swatches.html" aria-current=page>Colour swatches and shades</a><a href="header-menu.html">Header and menu</a><a href="collections.html">Collections, filters and pagination</a><p class="nav__g">Pages</p><a href="home-page.html">Build your home page</a><a href="product-page.html">The product page</a><a href="cart.html">Cart and checkout</a><a href="search.html">Search</a><a href="blog.html">Blog and articles</a><a href="pages.html">Pages (About, Contact, FAQ)</a><p class="nav__g">Customize</p><a href="look-and-feel.html">Colours, fonts and style</a><a href="motion.html">Animations and speed</a><a href="translations.html">Text and languages</a><p class="nav__g">Reference</p><a href="sections.html">Sections A to Z</a><p class="nav__g">Help</p><a href="troubleshooting.html">Troubleshooting and FAQ</a><a href="support.html">Get support</a><a href="changelog.html">Changelog</a></nav>
+<main id="main" class="doc"><p class="crumb"><a href="index.html">Docs</a> › Set up › Colour swatches and shades</p><h1>Colour swatches and shades</h1><p class="lead">Swatches turn a list of shade names into small coloured circles. This page explains how they work and how to set them up, even if you have never done it before.</p><h2 id="what-shoppers-see">What shoppers see</h2>
+<p>On a <strong>product page</strong>, an option such as <em>Shade</em> shows as round colour buttons with the chosen name written next to the title (for example <strong>Shade: Honey</strong>). The chosen swatch has a ring and a tick. Hover over a swatch to see its name. A sold-out swatch is faded and crossed out.</p>
+<p>On a <strong>product card</strong>, up to four small dots appear under the title, then a number such as <strong>+2</strong> for the rest.</p>
+<h2 id="the-3-ways-to-give-a-swatch-its-colour">The 3 ways to give a swatch its colour</h2>
+<p>The theme looks for a colour in this order and uses the first one it finds.</p>
+<table>
+<thead>
+<tr>
+<th>Order</th>
+<th>Method</th>
+<th>Best when</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>1</td>
+<td><strong>Shopify's own swatch colour</strong> on the option value</td>
+<td>You use Shopify's product category with a Color option. This is the recommended way.</td>
+</tr>
+<tr>
+<td>2</td>
+<td><strong>Swatch colors list</strong> in Theme settings</td>
+<td>Your shades are custom names such as <em>Honey</em> or <em>Cocoa</em>.</td>
+</tr>
+<tr>
+<td>3</td>
+<td><strong>A plain colour word</strong> such as Black, Red, Navy</td>
+<td>Your values are simple colour names. Nothing to set up.</td>
+</tr>
+</tbody>
+</table>
+<p>If a value has no colour from any of the three methods, the <strong>whole option shows as text buttons</strong> instead. This is on purpose, so you never see a blank circle.</p>
+<h2 id="method-1-shopifys-swatch-colour">Method 1: Shopify's swatch colour</h2>
+<ol class="steps">
+<li>Open the product in Shopify and set its <b>Category</b>. Shopify only offers swatch colours for categories that have a <b>Color</b> attribute.</li>
+<li>Under <b>Variants</b> add the option and choose <b>Color</b> from the list that Shopify offers.</li>
+<li>Pick each colour from Shopify's list. Shopify stores a swatch colour for each one.</li>
+<li>Save. The theme picks the colours up automatically.</li>
+</ol>
+
+<div class="admonition note">
+<p class="admonition-title">Note</p>
+<p>Not every beauty category offers the Color attribute, and the colour names Shopify offers may not match your shade names. If that happens, use Method 2. It always works.</p>
+</div>
+<h2 id="method-2-type-your-own-colours-most-common-for-makeup">Method 2: type your own colours (most common for makeup)</h2>
+<ol class="steps">
+<li>In the theme editor click the <b>paintbrush icon → Swatches</b>.</li>
+<li>Find the box called <b>Swatch colors</b>.</li>
+<li>Type one shade per line, as <code>Name: #colour</code>. Example:
+<pre><code>01 Porcelain: #F3D7C6
+02 Petal: #EBC3A8
+03 Honey: #D9A47E
+04 Sienna: #B77A55</code></pre></li>
+<li>Press <b>Save</b>.</li>
+</ol>
+
+<p><strong>Good to know</strong></p>
+<ul>
+<li>The name on the left must match the option value in your product. Capital letters do not matter.</li>
+<li>A leading number is optional. A product value <em>Honey</em> matches the line <em>03 Honey</em>, and the other way round.</li>
+<li>To find a colour code, take a photo of the product swatch, open it in any free colour picker and copy the code that starts with <code>#</code>.</li>
+<li>Use the same list for <strong>all</strong> products, so a shade always has the same colour.</li>
+</ul>
+<h2 id="method-3-plain-colour-words">Method 3: plain colour words</h2>
+<p>If your option values are words like <em>Black</em>, <em>Navy</em>, <em>Rose</em> or <em>Gold</em>, you do not need to set anything up. The theme knows these common words: black, white, red, blue, green, yellow, orange, purple, pink, brown, grey, beige, cream, ivory, gold, silver, bronze, navy, teal, olive, burgundy, maroon, coral, peach, nude, tan, khaki, lavender, lilac, mint, rose.</p>
+<h2 id="choose-which-options-become-swatches">Choose which options become swatches</h2>
+<p>In <strong>Theme settings → Swatches</strong> the box <strong>Options shown as swatches</strong> lists the option names that should become colour swatches. The default is <code>Color, Colour, Shade, Tone</code>. Add another name, for example <code>Finish</code>, separated by a comma.</p>
+<h2 id="choose-the-swatch-shape">Choose the swatch shape</h2>
+<p>Under <strong>Swatch shape</strong> choose <strong>Round</strong> (recommended), <strong>Square</strong> or <strong>Droplet</strong>.</p>
+<h2 id="show-swatches-on-product-cards">Show swatches on product cards</h2>
+<p>Open <strong>Theme settings → Product tiles</strong> and turn <strong>Show color swatches</strong> on or off.</p>
+<h2 id="swatches-with-photos">Swatches with photos</h2>
+<p>Instead of colours you can show a small photo of each variant, with its name underneath. This suits products where the bottle or box changes, such as scents.</p>
+<ol class="steps">
+<li>In Shopify attach a photo to each variant (open the variant row and add an image).</li>
+<li>In the theme editor open a product page and click the <b>Variant picker</b> block.</li>
+<li>Set <b>Style</b> to <b>Variant images</b> and press <b>Save</b>.</li>
+</ol>
+
+<h2 id="check-your-work">Check your work</h2>
+<ol class="steps">
+<li>Open a product page that has the option.</li>
+<li>You should see round colours and the chosen name next to the option title.</li>
+<li>Click another colour. The name, the product photo and the price update.</li>
+<li>Hover over a swatch to see its name.</li>
+</ol>
+
+<h2 id="troubleshooting">Troubleshooting</h2>
+<table>
+<thead>
+<tr>
+<th>What you see</th>
+<th>Why</th>
+<th>Fix</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>Text buttons instead of circles</td>
+<td>One value has no colour</td>
+<td>Add every value to <strong>Swatch colors</strong> or give it a Shopify swatch</td>
+</tr>
+<tr>
+<td>Text buttons even though I added colours</td>
+<td>The option is not named Color, Shade, Tone or Colour</td>
+<td>Rename the option, or add its name to <strong>Options shown as swatches</strong></td>
+</tr>
+<tr>
+<td>A circle is the wrong colour</td>
+<td>A colour code is wrong, or the name matches another line</td>
+<td>Check the code and the spelling of the name</td>
+</tr>
+<tr>
+<td>A swatch has a line through it</td>
+<td>That variant is sold out</td>
+<td>Add stock or leave it. This is expected.</td>
+</tr>
+<tr>
+<td>No dots on product cards</td>
+<td>The setting is off, or the option does not qualify</td>
+<td>Turn on <strong>Show color swatches</strong> and check the points above</td>
+</tr>
+</tbody>
+</table><nav class="pn" aria-label="Previous and next"><a href="products.html"><small>Previous</small>Add products</a><a class="r" href="header-menu.html"><small>Next</small>Header and menu</a></nav></main>
+<aside class="toc" aria-label="On this page"><p>On this page</p><a href="#what-shoppers-see">What shoppers see</a><a href="#the-3-ways-to-give-a-swatch-its-colour">The 3 ways to give a swatch its colour</a><a href="#method-1-shopifys-swatch-colour">Method 1: Shopify&#x27;s swatch colour</a><a href="#method-2-type-your-own-colours-most-common-for-makeup">Method 2: type your own colours (most common for makeup)</a><a href="#method-3-plain-colour-words">Method 3: plain colour words</a><a href="#choose-which-options-become-swatches">Choose which options become swatches</a><a href="#choose-the-swatch-shape">Choose the swatch shape</a><a href="#show-swatches-on-product-cards">Show swatches on product cards</a><a href="#swatches-with-photos">Swatches with photos</a><a href="#check-your-work">Check your work</a><a href="#troubleshooting">Troubleshooting</a></aside></div>
+<footer class="foot">Lumivane Shopify theme documentation · <a href="support.html">Get support</a></footer>
+<script src="search-index.js"></script><script src="app.js"></script></body></html>
